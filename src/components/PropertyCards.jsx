@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BiBath, BiBed } from "react-icons/bi";
-import { BsApp } from "react-icons/bs";
+import { BsApp, BsHouseDoorFill } from "react-icons/bs";
+import { SlCalender } from "react-icons/sl";
 
 import "../styles/PropertyCard.scss";
 
 function PropertyCards({ data }) {
+  useEffect(() => {
+    console.log(data.moveInDate.toISOString().substring(0, 10));
+  }, []);
+
   return (
     <div className="card-container">
       <img className="img-property" src={data.propertyImg} alt="" />
@@ -21,16 +26,24 @@ function PropertyCards({ data }) {
         <div className="divider"></div>
         <div className="prop-info">
           <div>
-            <div>
-              <BiBed color="#661d9f" /> {data.noOfBeds} Beds
-            </div>
-            <div>
-              {" "}
-              <BiBath color="#661d9f" /> {data.noOfBathrooms} Bathrooms
-            </div>
-            <div>
-              <BsApp color="#661d9f" /> {data.propertySize} sq. m
-            </div>
+            <BiBed color="#661d9f" /> {data.noOfBeds} Beds
+          </div>
+          <div>
+            {" "}
+            <BiBath color="#661d9f" /> {data.noOfBathrooms} Bathrooms
+          </div>
+          <div>
+            <BsApp color="#661d9f" /> {data.propertySize} sq. m
+          </div>
+        </div>
+        <div className="prop-info" style={{ marginTop: "0.2rem" }}>
+          <div>
+            {" "}
+            <SlCalender color="#661d9f" />{" "}
+            {data.moveInDate.toISOString().substring(0, 10)}
+          </div>
+          <div>
+            <BsHouseDoorFill color="#661d9f" /> {data.propertyType}
           </div>
         </div>
       </div>

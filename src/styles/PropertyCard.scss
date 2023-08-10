@@ -71,12 +71,15 @@ $secondary-txt-color: #747275;
     }
     .prop-info {
       color: $secondary-txt-color;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 0.8rem;
     }
   }
 
   .postion-tag {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: -2%;
     .tag {
       @include primary-btn;
