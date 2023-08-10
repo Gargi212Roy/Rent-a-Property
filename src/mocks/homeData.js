@@ -45,7 +45,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 13),
     propertySize: "3x5",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Houses",
@@ -57,7 +57,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 14),
     propertySize: "6x8",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
   },
   {
     propertyType: "Bungalow",
@@ -69,7 +69,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 14),
     propertySize: "4x5",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "PentHouses",
@@ -81,7 +81,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 22),
     propertySize: "3x7",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Villa",
@@ -93,7 +93,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 22),
     propertySize: "5x8",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/347141/pexels-photo-347141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Houses",
@@ -105,7 +105,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 31),
     propertySize: "4x6",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Bungalow",
@@ -117,7 +117,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 31),
     propertySize: "2x3",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Villa",
@@ -129,7 +129,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 17),
     propertySize: "4x6",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Houses",
@@ -141,7 +141,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 17),
     propertySize: "2x4",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "PentHouses",
@@ -153,7 +153,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 28),
     propertySize: "3x6",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/9952001/pexels-photo-9952001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Villa",
@@ -165,7 +165,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 28),
     propertySize: "3x5",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/3935320/pexels-photo-3935320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     propertyType: "Villa",
@@ -177,7 +177,7 @@ const homeData = [
     moveInDate: new Date(2023, 7, 25),
     propertySize: "4x7",
     propertyImg:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg",
+      "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 

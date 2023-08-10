@@ -4,7 +4,7 @@ import PropertyCards from "./components/PropertyCards";
 import homeData from "./mocks/homeData";
 
 import { IoIosArrowDown } from "react-icons/io";
-import "./HomePage.scss";
+import "./styles/HomePage.scss";
 import AllFilters from "./components/AllFilters";
 
 function HomePage() {
