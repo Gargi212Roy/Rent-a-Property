@@ -23,8 +23,8 @@ function HomePage() {
         </div>{" "}
         <AllFilters setAllHomeData={setAllHomeData} />
         <div className="card-grid">
-          {allHomeData.map((data, index) => (
-            <PropertyCards key={index} data={data} />
+          {allHomeData.map((homeData, index) => (
+            <PropertyCards key={index} homeData={homeData} />
           ))}
         </div>
       </div>
