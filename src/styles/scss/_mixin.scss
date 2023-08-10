@@ -1,0 +1,13 @@
+@mixin flex-prop {
+  display: flex;
+  align-items: center;
+}
+@mixin primary-btn {
+  background-color: rgba(85, 24, 126, 0.916);
+  color: #d9d9d9;
+}
+@mixin secondary-btn {
+  background-color: rgb(233, 227, 241);
+  color: rgba(110, 17, 176, 0.683);
+  border: 0.5px solid rgb(211, 208, 214);
+}

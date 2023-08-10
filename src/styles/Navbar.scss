@@ -1,0 +1,172 @@
+@import "./scss/mixin";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$primary-color: rgb(140, 21, 220);
+$primary-txt-color: rgb(93, 8, 150);
+$secondary-txt-color: #747275;
+
+// NAVBAR
+
+.navbar-container {
+  @include flex-prop;
+  justify-content: space-between;
+  box-shadow: 0px 2.844444513320923px 2.844444513320923px 0px
+    rgba(54, 24, 24, 0.25);
+  padding: 0 50px;
+  margin-left: 0;
+  width: 100vw;
+  .all-sections {
+    @include flex-prop;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    div {
+      @include flex-prop;
+      padding: 10px 20px;
+      font-weight: 600;
+
+      .navbar-data {
+        @include flex-prop;
+        margin-left: 15px;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+
+      .selected {
+        color: $primary-txt-color;
+        background-color: rgba($color: #dabae8, $alpha: 0.5);
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .log-in-section {
+    @include flex-prop;
+
+    .navbar-button {
+      cursor: pointer;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      padding: 5px 15px;
+      border-radius: 5px;
+      margin: 0 10px;
+      @include secondary-btn;
+    }
+
+    .selected-btn {
+      @include primary-btn;
+    }
+  }
+}
+
+.rent-icon {
+  color: $primary-color;
+  height: 30px;
+  width: 30px;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1214px) {
+  .navbar-container {
+    width: 100%;
+    padding: 0 25px;
+    height: 70px;
+    .all-sections {
+      div {
+        padding: 0px;
+        .navbar-data {
+          margin-left: 10px;
+          margin-right: 12px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .log-in-section {
+      .navbar-button {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 745px) {
+  .navbar-container {
+    width: 100vw;
+    padding: 0 15px;
+    height: 50px;
+    .all-sections {
+      font-size: 1rem;
+      div {
+        padding: 0px;
+        .navbar-data {
+          margin-left: 10px;
+          margin-right: 8px;
+          font-size: 0.52rem;
+        }
+      }
+    }
+    .log-in-section {
+      .navbar-button {
+        font-size: 0.65rem;
+        line-height: 1rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 545px) {
+  .navbar-container {
+    width: 100vw;
+    padding: 0 5px;
+    height: 30px;
+    .all-sections {
+      font-size: 0.8rem;
+      div {
+        padding: 0px;
+        .navbar-data {
+          margin-left: 10px;
+          margin-right: 8px;
+          font-size: 0.42rem;
+        }
+      }
+    }
+    .log-in-section {
+      .navbar-button {
+        font-size: 0.35rem;
+        line-height: 0.5rem;
+        padding: 5px 0;
+        border-radius: 5px;
+        margin: 0 5px;
+        width: 43px;
+        text-align: center;
+      }
+    }
+  }
+  .rent-icon {
+    color: $primary-color;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+  }
+  .icon {
+    margin: 2px;
+  }
+}

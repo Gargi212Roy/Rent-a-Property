@@ -1,0 +1,41 @@
+@import "./scss/mixin";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$primary-color: rgb(140, 21, 220);
+$primary-txt-color: rgb(93, 8, 150);
+$secondary-txt-color: #747275;
+
+.options {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dropdown {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 2;
+  background-color: #ffffff;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  .dropdown-options {
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}

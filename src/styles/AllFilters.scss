@@ -1,0 +1,175 @@
+@import "./scss/mixin";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$primary-color: rgb(140, 21, 220);
+$primary-txt-color: rgb(93, 8, 150);
+$secondary-txt-color: #747275;
+
+.filter-container {
+  border: 1px solid #e3dfe4;
+  border-radius: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 83%;
+  @include flex-prop;
+  .filter-content {
+    @include flex-prop;
+
+    .filter {
+      position: relative;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      .txt-grey {
+        color: $secondary-txt-color;
+      }
+
+      .vertical-divider {
+        height: 50px;
+        width: 1px;
+        background-color: $secondary-txt-color;
+      }
+
+      .filter-icons {
+        color: $primary-color;
+        background-color: rgba(34, 18, 45, 0.2);
+        border-radius: 50px;
+        padding: 2px 2px;
+      }
+    }
+  }
+}
+
+.search-button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 0 10px;
+  @include secondary-btn;
+}
+
+.selected-btn {
+  @include primary-btn;
+}
+
+.options {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1214px) {
+  .filter-container {
+    width: 90%;
+    flex-direction: column;
+    .filter-content {
+      .filter {
+        position: relative;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .txt-grey {
+          font-size: 0.8rem;
+          color: $secondary-txt-color;
+        }
+
+        .vertical-divider {
+          height: 50px;
+          width: 1px;
+          background-color: $secondary-txt-color;
+        }
+
+        .filter-icons {
+          color: $primary-color;
+          background-color: rgba(34, 18, 45, 0.2);
+          border-radius: 50px;
+          padding: 2px 2px;
+        }
+      }
+    }
+  }
+
+  .options {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .search-button {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 5px 10px;
+    margin: 0 10px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 745px) {
+  .filter-container {
+    width: 90%;
+    flex-direction: column;
+    .filter-content {
+      .filter {
+        padding: 5px;
+        .txt-grey {
+          font-size: 0.8rem;
+          color: $secondary-txt-color;
+        }
+      }
+    }
+  }
+  .options {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  .search-button {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 5px;
+    margin: 0 10px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .filter-container {
+    width: 90%;
+    flex-direction: column;
+
+    .filter-content {
+      .filter {
+        padding: 5px;
+        .txt-grey {
+          font-size: 0.5rem;
+        }
+        .react-datepicker-wrapper {
+          display: block;
+          margin-top: -10px;
+          padding: 0;
+          border: 0;
+        }
+      }
+    }
+  }
+
+  .options {
+    font-size: 0.4rem;
+    font-weight: 600;
+  }
+
+  .search-button {
+    font-size: 0.6rem;
+    line-height: 1rem;
+    padding: 3px;
+    margin: 0 10px;
+    margin-top: 0px;
+  }
+}

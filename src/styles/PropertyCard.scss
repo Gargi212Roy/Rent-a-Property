@@ -1,0 +1,164 @@
+@import "./scss/mixin";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$primary-color: rgb(140, 21, 220);
+$primary-txt-color: rgb(93, 8, 150);
+$secondary-txt-color: #747275;
+
+// CARD CONTAINER
+
+.card-container {
+  border: 1px solid #bcb3c1;
+  color: #661d9f;
+  border-radius: 10px;
+  width: 350px;
+  margin: 25px;
+  position: relative;
+
+  .img-property {
+    height: 260px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+  }
+
+  .prop-details {
+    padding: 10px 30px;
+    .rent-div {
+      @include flex-prop;
+      justify-content: space-between;
+      p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $primary-color;
+        .txt-small {
+          font-size: 1rem;
+          color: $secondary-txt-color;
+        }
+      }
+      .img-like {
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        border-radius: 50px;
+        border: 1px solid #791fa0;
+        color: #661d9f;
+      }
+    }
+    .prop-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #181717;
+    }
+    .prop-address {
+      color: $secondary-txt-color;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .divider {
+      margin-top: 10px;
+      margin-bottom: 8px;
+      width: 100%;
+      height: 0.5px;
+      background-color: $secondary-txt-color;
+    }
+    .prop-info {
+      color: $secondary-txt-color;
+    }
+  }
+
+  .postion-tag {
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    .tag {
+      @include primary-btn;
+      width: 100px;
+      height: 35px;
+      text-align: center;
+      border-radius: 10px;
+      border-bottom-left-radius: 0px;
+      padding: 5px 0;
+    }
+
+    .inverted-div {
+      width: 0;
+      height: 0;
+      border-top: 12px solid $primary-color;
+      border-left: 8px solid transparent;
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 645px) {
+  .card-container {
+    width: 250px;
+    margin: 35px;
+
+    .img-property {
+      width: 250px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom: none;
+    }
+
+    .prop-details {
+      padding: 10px 20px;
+      .rent-div {
+        @include flex-prop;
+        justify-content: space-between;
+        p {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $primary-color;
+          .txt-small {
+            font-size: 0.8rem;
+            color: $secondary-txt-color;
+          }
+        }
+        .img-like {
+          height: 30px;
+          width: 30px;
+          padding: 5px;
+          border-radius: 50px;
+          border: 1px solid #791fa0;
+          color: #661d9f;
+        }
+      }
+      .prop-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #181717;
+      }
+      .prop-address {
+        color: $secondary-txt-color;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+      .divider {
+        margin-top: 10px;
+        margin-bottom: 8px;
+        width: 100%;
+        height: 0.5px;
+        background-color: $secondary-txt-color;
+      }
+      .prop-info {
+        color: $secondary-txt-color;
+        font-size: 0.7rem;
+      }
+    }
+
+    .postion-tag {
+      position: absolute;
+      top: 40%;
+      left: -3%;
+    }
+  }
+}

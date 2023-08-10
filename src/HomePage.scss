@@ -1,0 +1,118 @@
+@import "./styles/scss/mixin";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$primary-color: rgb(140, 21, 220);
+$primary-txt-color: rgb(93, 8, 150);
+$secondary-txt-color: #747275;
+
+// CONTAINER
+.container {
+  margin: 50px auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    width: 85%;
+    @include flex-prop;
+    justify-content: space-between;
+
+    .header-content {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .input-div {
+      position: relative;
+      input {
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid #d9d9d9;
+        font-size: 1rem;
+        padding-left: 15px;
+      }
+
+      .abs-icon {
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        color: $primary-color;
+        background-color: rgba(34, 18, 45, 0.2);
+        border-radius: 50px;
+        padding: 2px 2px;
+      }
+    }
+  }
+
+  .card-grid {
+    @include flex-prop;
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: none;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1030px) {
+  .container {
+    width: 100vw;
+    .header {
+      .header-content {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .input-div {
+        input {
+          width: 200px;
+          height: 40px;
+          font-size: 0.8rem;
+        }
+
+        .abs-icon {
+          top: 35%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 645px) {
+  .container {
+    width: 100vw;
+    .header {
+      .header-content {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 545px) {
+  .container {
+    width: 100vw;
+    .header {
+      .header-content {
+        font-size: 1rem;
+      }
+      .input-div {
+        input {
+          width: 150px;
+          height: 30px;
+          font-size: 0.6rem;
+        }
+
+        .abs-icon {
+          display: none;
+        }
+      }
+    }
+  }
+}
